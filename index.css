@@ -1,0 +1,32 @@
+#shape{
+    border: 1px solid black;
+    background-color: antiquewhite; 
+    margin: 20px 0px 0px 50px; 
+}
+.square{
+    height: 100px;
+    width: 100px;  
+}
+
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.oval {
+    height: 100px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.rectangle {
+    height: 100px;
+    width: 150px;
+}
+
+.parallelogram {
+	width: 150px;
+	height: 100px;
+	transform: skew(20deg);
+}
