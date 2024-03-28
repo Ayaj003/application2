@@ -1,0 +1,80 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+#container {
+    width:550px;
+    height: 330px;
+    display: flex;
+    background-color: #fff;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.elementsContainer{
+display: flex;
+flex-direction: column;
+height: 330px;
+width:330px;
+justify-content: space-between;
+align-items: center;
+
+}
+
+#shape{
+    text-align: center; 
+    padding: 30px;
+}
+
+select{
+    margin: 20px 0px 20px 0px;
+    border-radius: 20px;
+    padding: 0px 80px 0px 30px;
+    width:100%;
+    height:50px;
+    border: 1px solid grey;
+}
+
+button {
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    border-radius: 20px;
+    color: #fff;
+    border: 0;
+    padding: 10px 0px;
+    width: 90px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.square, .circle, .oval, .rectangle, .parallelogram, .triangle{
+    height: 200px;
+    width: 200px;
+}
+  
+.circle, .oval{
+    border-radius: 50%;
+}
+  
+.oval{
+    width: 140px;
+}
+  
+.rectangle{
+    width: 150px;
+}
+  
+.parallelogram{
+    width: 140px;
+    transform: skew(20deg);
+}
+
+.triangle{
+    clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
