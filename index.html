@@ -10,30 +10,31 @@
 <div id="container">
 <div class="elementsContainer inputContainer">
 <div>
+    <div class="colorSelectContainer">
     <select id="colorSelect">
-        <option>Choose a Color</option>
         <option id="red">Red</option>
         <option id="blue">Blue</option>
         <option id="black">Black</option>
         <option id="purple">Purple</option>
         <option id="green">Green</option>
         <option id="yellow">Yellow</option>
-    </select><br>
-<select id="shapeSelect">
-    <option>Choose a Shape</option>
-    <option value="square" id="square">Square</option>
-    <option value="circle" id="circle">Circle</option>
-    <option value="rectangle" id="rectangle">Rectangle</option>
-    <option value="triangle" id="triangle">Triangle</option>
-    <option value="oval" id="oval">Oval</option>
-    <option value="parallelogram" id="parallelogram">Parallelogram</option>
-</select>
+    </select>
+    </div><br>
+    <div class="shapeSelectContainer">
+    <select id="shapeSelect">
+        <option value="square" id="square">Square</option>
+        <option value="circle" id="circle">Circle</option>
+        <option value="rectangle" id="rectangle">Rectangle</option>
+        <option value="triangle" id="triangle">Triangle</option>
+        <option value="oval" id="oval">Oval</option>
+        <option value="parallelogram" id="parallelogram">Parallelogram</option>
+    </select></div>
 </div>
 <button id="changeShape" onclick="changeShape(), changeColor()"> Apply</button>
 </div>
 <div class="elementsContainer">
 <div id="shape" class=""></div>
-<button onclick="clearShape()">Clear</button>
+<button id="clearBtn" onclick="clearShape()">Clear</button>
 </div>
 <script src="index.js"></script>
 
