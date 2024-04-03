@@ -37,12 +37,12 @@ select{
 
 #colorSelect{
     margin:15px 0px 85px 0px;
-    }
+}
     
 
 .colorSelectContainer, .shapeSelectContainer {
     position: relative;
-  }
+}
 
 .colorSelectContainer::after, .shapeSelectContainer::after {
     content: "^";
