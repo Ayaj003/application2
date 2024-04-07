@@ -1,9 +1,22 @@
+$colorful-background:linear-gradient(135deg, #71b7e6, #9b59b6);
+
+@mixin flex-box($justification, $aligning, $direction) {
+display: flex;
+justify-content: $justification;
+align-items: $aligning;
+flex-direction: $direction;
+}
+
+
+@mixin box-shadow($x-offset, $y-offset, $blur, $spread, $color) {
+    box-shadow: $x-offset $y-offset $blur $spread $color;
+}
+
 body {
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    @include flex-box(center, center, row);
+    background: $colorful-background;
 }
 
 #container {
@@ -13,16 +26,13 @@ body {
     background-color: #fff;
     padding: 40px 60px;
     border-radius: 20px;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    @include box-shadow(0px, 8px, 16px, 0px, rgba(0, 0, 0, 0.2));
 }
 
 .elementsContainer{
-display: flex;
-flex-direction: column;
-height: 310px;
-width:330px;
-justify-content: space-between;
-
+    height: 310px;
+    width:330px;
+    @include flex-box(space-between, normal, column);
 }
 
 select{
@@ -59,24 +69,22 @@ select{
 
 #shape{
     margin: 15px 0px 0px 40px;
-
 }
 
 button {
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    background: $colorful-background;
     border-radius: 20px;
     color: #fff;
     border: 0;
     padding: 10px 0px;
     width: 90px;
+    &:hover{
+        @include box-shadow(0px, 12px, 16px, 0px, rgba(0, 0, 0, 0.24));
+    }
 }
 
 #clearBtn{
     margin-left: 40px;
-}
-
-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .square, .circle, .oval, .rectangle, .parallelogram, .triangle{
